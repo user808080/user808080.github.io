@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <body>
-<div>
-    <h1>Wellosfsfsdfds</h1>
-    <h1>Wellosfsfsdfds</h1>
-    <h1>Wellosfsfsdfds</h1>
-  <h1>Wellosfsfsdfds</h1>
-</div>
-  </body>
-<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<button id="id-generate" style="width:500px; height:200px;"> Generate</button>
+	
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+	let count = 1;
+	const searchQuery = [
+	"spark",
+	"lurk",
+	"what is the capital of beijing",
+	"microphone",
+	"astrology",
+	"economy",
+	"berserker",	
+	"where is my life",
+	"what to do with it",
+	"dementia",
+	"sow",
+	"boar",
+	"folktore",
+	"legends",
+	"basketball highlight",
+	"mobile legends",
+	"valir",
+	"layla best build",
+	"introduction",
+	"simon says",	
+	"dracula",
+	"mercenary",
+	"vladimir",
+	"dictionary",
+	"white fang",
+	"best opm rock star",
+	"dota",
+	"far cry",
+	"two steps from hell",
+	"angels"
+
+	];
+
+
+	$(document).ready(function(){
+	$('#id-generate').focus();
+	$("#id-generate").click(function(){
+	
+	window.open( "https://www.bing.com/search?pglt="+count+"&q="+searchQuery[count-1], "_blank");
+	count++;
+});
+
+
+  
+});
+</script>
